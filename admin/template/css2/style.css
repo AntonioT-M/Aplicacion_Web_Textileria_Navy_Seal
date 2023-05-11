@@ -1,0 +1,136 @@
+nav{
+    background-color: #0a5a9b;
+    font-size: 22px;
+}
+
+.nombreEmp{
+    font-size: 2rem;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    border: 1px;
+    border-color: white;
+}
+
+button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+footer{
+    background-color: #0a5a9b; color:aliceblue;
+}
+
+/*Efect*/
+
+.image {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    height: 250px;
+    overflow: hidden;
+    margin: 15px auto;
+    position: relative;
+    width: 250px;
+  }
+  
+  figure img {
+    border-radius: 5px;
+    height: 100%;
+    transition: all .23s ease;
+    width: 100%;
+  }
+  
+  .image figcaption {
+    color: #555;
+    font-family: 'Exo';
+    height: 100%;
+    left: 0;
+    line-height: 250px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    transition: all .23s ease;
+    width: 100%;
+  }
+  
+  .image.fade figcaption {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .image.push figcaption {
+    top: 0;
+    transform: translateY(250px);
+  }
+  
+  .image.push:hover > img {
+    transform: translateY(-250px);
+  }
+  
+  .image.push:hover > figcaption {
+    transform: translateY(0px);
+  }
+  
+  .image.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .image.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /*Efect*/
+
+  .div-imagen {
+    display:inline-block;
+    position:relative;
+  }
+  
+  .div-imagen > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+  }
+  
+  .desvanecer:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+
+  /*Animacion*/
+
+  @keyframes sombreadoAnimado{
+    from{
+        text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #d6d6d6,
+        0px 0px 150px #d6d6d6,
+        0px 10px 100px #d6d6d6,
+        0px 10px 100px #d6d6d6,
+        0px 10px 100px #d6d6d6,
+        0px 10px 100px #d6d6d6,
+        0px -10px 100px #d6d6d6,
+        0px -10px 100px #d6d6d6;
+      }
+  }
+
